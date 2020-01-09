@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interface>
+<interface domain="dconf-editor">
   <object class="GtkShortcutsWindow" id="help_overlay">
     <child>
       <object class="GtkShortcutsSection">
         <property name="visible">True</property>
-        <property name="max-height">12</property>
+        <property name="max-height">14</property>
         <child>
           <object class="GtkShortcutsGroup">
             <property name="visible">True</property>
@@ -44,13 +44,6 @@
                 <property name="accelerator">F10</property>
               </object>
             </child>
-            <!-- child>
-              <object class="GtkShortcutsShortcut">
-                <property name="visible">True</property>
-                <property name="title" translatable="yes" context="shortcut window">Current row menu</property>
-                <property name="accelerator">Menu</property>
-              </object>
-            </child -->
           </object>
         </child>
         <child>
@@ -69,6 +62,33 @@
                 <property name="visible">True</property>
                 <property name="title" translatable="yes" context="shortcut window">Copy path</property>
                 <property name="accelerator">&lt;Primary&gt;&lt;Shift&gt;c</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkShortcutsGroup">
+            <property name="visible">True</property>
+            <property name="title" translatable="yes" context="shortcut window">Modifications list actions</property>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">True</property>
+                <property name="title" translatable="yes" context="shortcut window">Toggle modifications list</property>
+                <property name="accelerator">&lt;Primary&gt;i</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">True</property>
+                <property name="title" translatable="yes" context="shortcut window">Open selected row key</property>
+                <property name="accelerator">Return</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">True</property>
+                <property name="title" translatable="yes" context="shortcut window">Dismiss modification</property>
+                <property name="accelerator">&lt;Primary&gt;Delete</property>
               </object>
             </child>
           </object>
@@ -103,6 +123,33 @@
                 <property name="visible">True</property>
                 <property name="title" translatable="yes" context="shortcut window">Open active last child</property>
                 <property name="accelerator">&lt;Alt&gt;&lt;Shift&gt;Down</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkShortcutsGroup">
+            <property name="visible">True</property>
+            <property name="title" translatable="yes" context="shortcut window">Keys list actions</property>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">True</property>
+                <property name="title" translatable="yes" context="shortcut window">Contextual menu</property>
+                <property name="accelerator">Menu</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">True</property>
+                <property name="title" translatable="yes" context="shortcut window">Set to default</property>
+                <property name="accelerator">&lt;Primary&gt;Delete</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="visible">True</property>
+                <property name="title" translatable="yes" context="shortcut window">Toggle boolean value</property>
+                <property name="accelerator">&lt;Primary&gt;Return</property>
               </object>
             </child>
           </object>

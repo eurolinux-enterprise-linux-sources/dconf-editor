@@ -1,0 +1,8 @@
+--- dconf-editor-3.28.0/meson_post_install.py.python3	2018-03-13 09:18:02.000000000 +0100
++++ dconf-editor-3.28.0/meson_post_install.py	2018-05-21 21:50:52.401846785 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python3
++#!/usr/bin/env python2
+ 
+ import os
+ import subprocess

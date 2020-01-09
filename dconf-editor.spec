@@ -1,24 +1,32 @@
+%global dconf_version 0.26.1
+%global glib2_version 2.55.1
+%global gtk3_version 3.22.27
+
 Name:           dconf-editor
-Version:        3.22.3
-Release:        3%{?dist}
+Version:        3.28.0
+Release:        1%{?dist}
 Summary:        Configuration editor for dconf
 
-License:        GPLv3+ and LGPLv2+ and GPLv2+ and CC0
+License:        GPLv3+ and CC0
 URL:            https://wiki.gnome.org/Projects/dconf
-Source0:        https://download.gnome.org/sources/dconf-editor/3.22/dconf-editor-%{version}.tar.xz
+Source0:        https://download.gnome.org/sources/dconf-editor/3.28/dconf-editor-%{version}.tar.xz
+# Fix the build with Python 2
+Patch0:         dconf-editor-python3.patch
 
 BuildRequires:  /usr/bin/appstream-util
 BuildRequires:  desktop-file-utils
-BuildRequires:  intltool
-BuildRequires:  pkgconfig(dconf) >= 0.25.1
-BuildRequires:  pkgconfig(glib-2.0) >= 2.46.0
+BuildRequires:  gettext
+BuildRequires:  meson
+BuildRequires:  pkgconfig(dconf) >= %{dconf_version}
+BuildRequires:  pkgconfig(glib-2.0) >= %{glib2_version}
 BuildRequires:  pkgconfig(gmodule-2.0)
-BuildRequires:  pkgconfig(gtk+-3.0) >= 3.22.0
+BuildRequires:  pkgconfig(gtk+-3.0) >= %{gtk3_version}
 BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  vala
 
-Requires:       glib2 >= 2.46.0
-Requires:       gtk3 >= 3.22.0
+Requires:       dconf%{?_isa} >= %{dconf_version}
+Requires:       glib2%{?_isa} >= %{glib2_version}
+Requires:       gtk3%{?_isa} >= %{gtk3_version}
 
 # dconf-editor has been split off dconf in 0.23.1
 Conflicts: dconf <= 0.23.1
@@ -27,19 +35,19 @@ Conflicts: dconf <= 0.23.1
 Graphical tool for editing the dconf configuration database.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
-%configure
-make %{?_smp_mflags}
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
-%find_lang dconf
+%find_lang dconf-editor
 
 %check
-appstream-util validate-relax --nonet $RPM_BUILD_ROOT%{_datadir}/appdata/ca.desrt.dconf-editor.appdata.xml
+appstream-util validate-relax --nonet $RPM_BUILD_ROOT%{_datadir}/metainfo/ca.desrt.dconf-editor.appdata.xml
 desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/ca.desrt.dconf-editor.desktop
 
 %post
@@ -56,18 +64,23 @@ fi
 gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
 glib-compile-schemas %{_datadir}/glib-2.0/schemas &>/dev/null || :
 
-%files -f dconf.lang
+%files -f dconf-editor.lang
 %license COPYING
 %{_bindir}/dconf-editor
-%{_datadir}/appdata/ca.desrt.dconf-editor.appdata.xml
 %{_datadir}/applications/ca.desrt.dconf-editor.desktop
+%{_datadir}/bash-completion/
 %{_datadir}/dbus-1/services/ca.desrt.dconf-editor.service
 %{_datadir}/glib-2.0/schemas/ca.desrt.dconf-editor.gschema.xml
-%{_datadir}/icons/hicolor/*/apps/dconf-editor.png
-%{_datadir}/icons/hicolor/scalable/apps/dconf-editor-symbolic.svg
+%{_datadir}/icons/hicolor/*/apps/ca.desrt.dconf-editor.png
+%{_datadir}/icons/hicolor/scalable/apps/ca.desrt.dconf-editor-symbolic.svg
+%{_datadir}/metainfo/ca.desrt.dconf-editor.appdata.xml
 %{_mandir}/man1/dconf-editor.1*
 
 %changelog
+* Tue Mar 13 2018 Kalev Lember <klember@redhat.com> - 3.28.0-1
+- Update to 3.28.0
+- Resolves: #1569718
+
 * Mon Mar  6 2017 Marek Kasik <mkasik@redhat.com> - 3.22.3-3
 - Add Requires
 - Related: #1388931

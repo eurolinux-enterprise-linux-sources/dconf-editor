@@ -2,14 +2,14 @@
 # Copyright (C) 2012 dconf's COPYRIGHT HOLDER
 # This file is distributed under the same license as the dconf package.
 #
-# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013, 2014, 2015, 2016.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013, 2014, 2015, 2016, 2017, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: dconf master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=dconf-ed"
-"itor&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-08-19 13:56+0000\n"
-"PO-Revision-Date: 2016-08-28 19:04+0200\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=dconf-e"
+"ditor&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2018-03-09 12:49+0000\n"
+"PO-Revision-Date: 2018-03-10 10:34+0200\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -20,19 +20,19 @@ msgstr ""
 " 2);\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: ../editor/bookmarks.ui.h:1
+#: editor/bookmarks.ui:19
 msgid "Bookmark this Location"
 msgstr "Pievienot šo vietu grāmatzīmēs"
 
-#: ../editor/bookmarks.ui.h:2
+#: editor/bookmarks.ui:36
 msgid "Location bookmarked"
 msgstr "Vieta pievienota grāmatzīmēm"
 
-#: ../editor/bookmarks.ui.h:3
+#: editor/bookmarks.ui:37
 msgid "Toggle to bookmark this location"
 msgstr "Pārslēgt šīs vietas pievienošanu grāmatzīmēm"
 
-#: ../editor/bookmarks.ui.h:4
+#: editor/bookmarks.ui:62
 msgid ""
 "Bookmarks will\n"
 "be added here"
@@ -40,31 +40,55 @@ msgstr ""
 "Grāmatzīmes tiks\n"
 "pievienotas šeit"
 
-#: ../editor/bookmarks.ui.h:6
+#: editor/bookmarks.ui:88 editor/registry-search.vala:445
 msgid "Bookmarks"
 msgstr "Grāmatzīmes"
 
-#: ../editor/bookmarks.ui.h:7
+#: editor/bookmarks.ui:89
 msgid "Manage your bookmarks"
 msgstr "Pārvaldiet savas grāmatzīmes"
 
-#: ../editor/bookmark.ui.h:1
+#: editor/bookmark.ui:33
 msgid "Remove"
 msgstr "Izņemt"
 
-#: ../editor/bookmark.ui.h:2
+#: editor/bookmark.ui:34
 msgid "Remove this bookmark"
 msgstr "Izņemt to grāmatzīmi"
 
-#: ../editor/ca.desrt.dconf-editor.appdata.xml.in.h:1
+#: editor/browser-view.vala:47
+#| msgid "Sort preferences have changed. Do you want to reload the view?"
+msgid "Sort preferences have changed. Do you want to refresh the view?"
+msgstr ""
+"Kārtošanas iestatījumi ir mainījušies. Vai vēlaties atsvaidzināt skatu?"
+
+#: editor/browser-view.vala:48 editor/dconf-editor.ui:159
+msgid "Refresh"
+msgstr "Atsvaidzināt"
+
+#: editor/browser-view.vala:49
+#| msgid "Sort preferences have changed. Do you want to reload the view?"
+msgid "This folder content has changed. Do you want to reload the view?"
+msgstr "Mapes saturs ir mainījies. Vai vēlaties pārlādēt skatu?"
+
+#: editor/browser-view.vala:50 editor/browser-view.vala:52
+msgid "Reload"
+msgstr "Pārlādēt"
+
+#: editor/browser-view.vala:51
+#| msgid "Sort preferences have changed. Do you want to reload the view?"
+msgid "This key’s properties have changed. Do you want to reload the view?"
+msgstr "Atslēgas īpašības ir mainījušās. Vai vēlaties pārlādēt skatu?"
+
+#: editor/ca.desrt.dconf-editor.appdata.xml.in:9
 msgid "Dconf Editor"
 msgstr "Dconf redaktors"
 
-#: ../editor/ca.desrt.dconf-editor.appdata.xml.in.h:2
+#: editor/ca.desrt.dconf-editor.appdata.xml.in:10
 msgid "A graphical tool for editing the dconf database"
 msgstr "Grafiskais rīks dconf datubāzes rediģēšanai"
 
-#: ../editor/ca.desrt.dconf-editor.appdata.xml.in.h:3
+#: editor/ca.desrt.dconf-editor.appdata.xml.in:13
 msgid ""
 "Dconf Editor is a tool to allow direct editing of the dconf configuration "
 "database. This is useful when developing applications that use these "
@@ -73,7 +97,7 @@ msgstr ""
 "Dconf redaktora rīks jums ļauj tiešā veidā rediģēt dconf konfigurācijas "
 "datubāzi. Tas noder izstrādājot lietotnes, kuras izmanto šos iestatījumus."
 
-#: ../editor/ca.desrt.dconf-editor.appdata.xml.in.h:4
+#: editor/ca.desrt.dconf-editor.appdata.xml.in:17
 msgid ""
 "Editing your configuration directly is an advanced feature and may cause "
 "applications to not work correctly."
@@ -81,187 +105,292 @@ msgstr ""
 "Tieša konfigurācijas rediģēšana ir paredzēta lietpratējiem un lietotne var "
 "sākt strādāt nepareizi."
 
-#: ../editor/ca.desrt.dconf-editor.appdata.xml.in.h:5
+#: editor/ca.desrt.dconf-editor.appdata.xml.in:25
 msgid "Browse the keys used by installed applications"
 msgstr "Pārlūkot atslēgas, ko izmanto instalētās lietotnes"
 
-#: ../editor/ca.desrt.dconf-editor.appdata.xml.in.h:6
+#: editor/ca.desrt.dconf-editor.appdata.xml.in:29
 msgid "Read keys descriptions and edit their values"
 msgstr "Lasīt atslēgu aprakstus un rediģēt to vērtības"
 
 #. a translatable version of project_group
-#: ../editor/ca.desrt.dconf-editor.appdata.xml.in.h:8
+#: editor/ca.desrt.dconf-editor.appdata.xml.in:45
 msgid "The GNOME Project"
 msgstr "GNOME projekts"
 
-#: ../editor/ca.desrt.dconf-editor.desktop.in.in.h:1
-#: ../editor/dconf-editor.ui.h:1 ../editor/dconf-editor.vala:73
-#: ../editor/dconf-editor.vala:147
+#: editor/ca.desrt.dconf-editor.desktop.in:3 editor/dconf-editor.ui:6
+#: editor/dconf-editor.vala:262 editor/dconf-editor.vala:476
 msgid "dconf Editor"
 msgstr "dconf redaktors"
 
-#: ../editor/ca.desrt.dconf-editor.desktop.in.in.h:2
+#: editor/ca.desrt.dconf-editor.desktop.in:4
 msgid "Configuration editor for dconf"
 msgstr "dconf konfigurācijas redaktors"
 
-#: ../editor/ca.desrt.dconf-editor.desktop.in.in.h:3
-#: ../editor/dconf-editor.vala:149
+#: editor/ca.desrt.dconf-editor.desktop.in:5
 msgid "Directly edit your entire configuration database"
 msgstr "Tieši rediģē visu savu konfigurācijas datubāzi"
 
-#: ../editor/ca.desrt.dconf-editor.desktop.in.in.h:4
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: editor/ca.desrt.dconf-editor.desktop.in:7
 msgid "settings;configuration;"
 msgstr "iestatījumi;konfigurācija;"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:1
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: editor/ca.desrt.dconf-editor.desktop.in:15
+msgid "ca.desrt.dconf-editor"
+msgstr "ca.desrt.dconf-editor"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:101
 msgid "The width of the window"
 msgstr "Loga platums"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:2
+#: editor/ca.desrt.dconf-editor.gschema.xml:102
 msgid "The width of the main window in pixels."
 msgstr "Galvenā loga platums pikseļos."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:3
+#: editor/ca.desrt.dconf-editor.gschema.xml:106
 msgid "The height of the window"
 msgstr "Loga augstums"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:4
+#: editor/ca.desrt.dconf-editor.gschema.xml:107
 msgid "The height of the main window in pixels."
 msgstr "Galvenā loga augstums pikseļos."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:5
+#: editor/ca.desrt.dconf-editor.gschema.xml:111
+#: editor/ca.desrt.dconf-editor.gschema.xml:112
 msgid "A flag to enable maximized mode"
 msgstr "Ieslēgt maksimizētu režīmu"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:6
-msgid "A list of bookmarked paths"
-msgstr "Saraksts ar ceļiem grāmatzīmēs"
-
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:7
-msgid "Contains all paths bookmarked by the user as an array of strings."
-msgstr ""
-"Satur visus ceļus (kā virkņu masīvu), kurus lietotājs ir pievienojis "
-"grāmatzīmēm."
-
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:8
+#: editor/ca.desrt.dconf-editor.gschema.xml:116
 msgid "A flag to restore the last view"
 msgstr "Karogs, uz ko atjaunot iepriekšējo skatu"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:9
+#: editor/ca.desrt.dconf-editor.gschema.xml:117
 msgid ""
-"If 'true', Dconf Editor tries at launch to navigate to the path described in "
-"the 'saved-view' key."
+"If “true”, Dconf Editor tries at launch to navigate to the path described in "
+"the “saved-view” key."
 msgstr ""
 "Ja “patiess”, Dconf redaktors palaižoties mēģinās aiziet uz ceļu, kas ir "
 "aprakstīts “saved-view” atslēgā."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:10
+#: editor/ca.desrt.dconf-editor.gschema.xml:121
 msgid "A path to restore the last view"
 msgstr "Ceļš, uz ko atjaunot iepriekšējo skatu"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:11
+#: editor/ca.desrt.dconf-editor.gschema.xml:122
 msgid ""
-"If the 'restore-view' key is set to 'true', Dconf Editor tries at launch to "
+"If the “restore-view” key is set to “true”, Dconf Editor tries at launch to "
 "navigate to this path."
 msgstr ""
 "Ja atslēga “restore-view” ir iestatīta uz “patiess”, Dconf redaktors "
 "palaižoties mēģinās aiziet uz šo ceļu."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:12
+#: editor/ca.desrt.dconf-editor.gschema.xml:126
 msgid "Show initial warning"
 msgstr "Rādīt sākotnējo brīdinājumu"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:13
+#: editor/ca.desrt.dconf-editor.gschema.xml:127
 msgid ""
-"If 'true', Dconf Editor opens a popup when launched reminding the user to be "
+"If “true”, Dconf Editor opens a popup when launched reminding the user to be "
 "careful."
 msgstr ""
 "Ja “patiess”, Dconf palaižoties redaktors atvērs uzlecošo logu, kurš "
 "atgādinās lietotājam, lai viņš uzmanās."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:14
-#| msgid "A flag to enable fullscreen mode"
+#: editor/ca.desrt.dconf-editor.gschema.xml:131
 msgid "A flag to enable small rows for keys list"
 msgstr "Karogs, lai ieslēgtu mazās rindas atslēgu sarakstam"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:15
-msgid "If 'true', the keys list use smaller rows."
+#: editor/ca.desrt.dconf-editor.gschema.xml:132
+msgid "If “true”, the keys list use smaller rows."
 msgstr "Ja “patiess”, atslēgu saraksts izmantos mazākas rindas."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:16
+#: editor/ca.desrt.dconf-editor.gschema.xml:136
 msgid "A flag to enable small rows for bookmarks list"
 msgstr "Karogs, lai ieslēgtu mazās rindas grāmatzīmju sarakstam"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:17
-msgid "If 'true', the bookmarks list use smaller rows."
+#: editor/ca.desrt.dconf-editor.gschema.xml:137
+msgid "If “true”, the bookmarks list use smaller rows."
 msgstr "Ja “patiess”, grāmatzīmju saraksts izmantos mazākas rindas."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:18
-#| msgid "The width of the main window in pixels."
-msgid "The theme of the navigation list"
-msgstr "Navigācijas saraksta motīvs"
-
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:19
-msgid ""
-"The themes are defined by the application, you cannot add one. The theme "
-"'three-twenty-two' will remain as close as possible to the default theme of "
-"the 3.22 release."
-msgstr ""
-"Motīvus nosaka lietotne, jūs tos nevarat mainīt. Motīvs “three-twenty-two”"
-" paliks pēc iespējas tuvāks noklusējuma 3.22 laidienam."
-
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:20
+#: editor/ca.desrt.dconf-editor.gschema.xml:141
 msgid "Change the behaviour of a key value change request"
 msgstr "Mainīt uzvedību atslēgas vērtības maiņas pieprasījumam"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:21
+#: editor/ca.desrt.dconf-editor.gschema.xml:142
 msgid ""
-"The 'unsafe' value is discouraged: for keys that have a non-special-cased "
+"The “unsafe” value is discouraged: for keys that have a non-special-cased "
 "type, it updates the key value each time something changes in the entry, so "
-"including intermediate states. The 'safe' value asks for confirmation in "
+"including intermediate states. The “safe” value asks for confirmation in "
 "these cases, but allows instant changes for booleans and nullable booleans, "
-"enums and flags. The 'always-confirm-implicit' and 'always-confirm-explicit' "
+"enums and flags. The “always-confirm-implicit” and “always-confirm-explicit” "
 "values always asks for confirmation, but the first applies the change if you "
-"change path whereas the second dismiss it. The 'always-delay' value adds "
+"change path whereas the second dismiss it. The “always-delay” value adds "
 "each change in delay mode, allowing to apply multiple keys at once."
 msgstr ""
-"Nedrošās (unsafe) vērtības nav ieteicamas — atslēgām, kas ir"
-" “non-special-cased” tipa, to vērtības tiek atjauninātas katru reizi kaut kas"
-" mainās ierakstā, tātad arī starpstāvokļus. Drošā (safe) vērtība šādos"
-" gadījumos prasa  apstiprinājumu, bet ļauj tūlītējas izmaiņas Būla un"
-" nullējamos Būla tipos, uzskaitījumos un karogos. “always-confirm-implicit”"
-" un “always-confirm-explicit” vērtības vienmēr prasa apstiprināšanu, bet"
-" pirmais pielieto izmaiņas, ja maināt ceļu, savukārt otrs to atmet."
-" “always-delay” vērtība pievieno katras izmaiņas aiztures režīmā, ļaujot"
-" pielietot vairākas atslēgas uzreiz."
+"Nedrošās (unsafe) vērtības nav ieteicamas — atslēgām, kas ir “non-special-"
+"cased” tipa, to vērtības tiek atjauninātas katru reizi kaut kas mainās "
+"ierakstā, tātad arī starpstāvokļus. Drošā (safe) vērtība šādos gadījumos "
+"prasa  apstiprinājumu, bet ļauj tūlītējas izmaiņas Būla un nullējamos Būla "
+"tipos, uzskaitījumos un karogos. “always-confirm-implicit” un “always-"
+"confirm-explicit” vērtības vienmēr prasa apstiprināšanu, bet pirmais "
+"pielieto izmaiņas, ja maināt ceļu, savukārt otrs to atmet. “always-delay” "
+"vērtība pievieno katras izmaiņas aiztures režīmā, ļaujot pielietot vairākas "
+"atslēgas uzreiz."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:22
-msgid "A boolean, type \"b\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:146
+msgid "A flag to sort keys list case-sensitively"
+msgstr "Karogs, lai kārtotu sarakstu, ņemot vērā burtu reģistru"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:147
+msgid ""
+"GSettings doesn’t allow keys to use upper-case in their names, but "
+"installation paths of schemas can. If “true”, the keys list is sorted case-"
+"sensitively, with in usual order upper-case folders first."
+msgstr ""
+"GSettings nepieļauj atslēgas ar lielajiem burtiem to nosaukumos, bet tie var "
+"būt shēmu instalāciju ceļos. Ja “patiess”, atslēgu saraksts tiek kārtots, "
+"ņemot vērā burtu reģistru, kur parasti lielo burtu mapes ir pirmās."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:151
+msgid "Use “Back” and “Forward” mouse button events"
+msgstr "Izmantot “Atpakaļ” un “Uz priekšu” peles pogu notikumus"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:152
+#| msgid ""
+#| "For users with mice that have buttons for “Forward” and “Back”, this key "
+#| "will set which button activates the “Back” command in a browser window. "
+#| "Possible values range between 6 and 14."
+msgid ""
+"For users with mice that have buttons for “Forward” and “Back”, this key "
+"will determine if any action is taken inside of a browser window when either "
+"is pressed."
+msgstr ""
+"Lietotājiem ar pelēm, kurām ir “Uz priekšu” un “Atpakaļ” pogas, šī atslēga "
+"noteikts, vai jebkāda darbība tiek veikta pārlūka logā, ja kaut viena no šīm "
+"pogām ir nospiesta."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:157
+msgid "Mouse button to activate the “Back” command in browser window"
+msgstr "Peles poga, ar ko aktivizēt “Atpakaļ” komandu pārlūka logā"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:158
+msgid ""
+"For users with mice that have buttons for “Forward” and “Back”, this key "
+"will set which button activates the “Back” command in a browser window. "
+"Possible values range between 6 and 14."
+msgstr ""
+"Lietotājiem ar pelēm, kurām ir “Uz priekšu” un “Atpakaļ” pogas, šī atslēga "
+"iestatīs, kura poga aktivizēs “Atpakaļ” komandu pārlūka logā. Iespējamās "
+"vērtības ir robežās no 6 līdz 14."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:163
+msgid "Mouse button to activate the “Forward” command in browser window"
+msgstr "Peles poga, ar ko aktivizēt “Uz priekšu” komandu pārlūka logā"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:164
+msgid ""
+"For users with mice that have buttons for “Forward” and “Back”, this key "
+"will set which button activates the “Forward” command in a browser window. "
+"Possible values range between 6 and 14."
+msgstr ""
+"Lietotājiem ar pelēm, kurām ir “Uz priekšu” un “Atpakaļ” pogas, šī atslēga "
+"iestatīs, kura poga aktivizēs “Uz priekšu” komandu pārlūka logā. Iespējamās "
+"vērtības ir robežās no 6 līdz 14."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:168
+msgid "A flag to check for added or removed schemas"
+msgstr "Slēdzis, ar ko pārbaudīt, vai ir pievienotas vai noņemtas atslēgas"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:169
+msgid ""
+"Dconf Editor can monitor if schemas are added or removed from the multiple "
+"possible locations. That’s done by checking every three seconds if the "
+"schemas list has changed. As this way to do is suboptimal, this function can "
+"be disabled by setting this flag to “false”. Note that this option will be "
+"removed when a better way to do things is found."
+msgstr ""
+"Dconf redaktors var vairākās vietās uzraudzīt, vai shēmas tiek pievienotas"
+" vai izņemtas. To dara, ik pēc trīs sekundēm pārbaudot, vai shēmas ir"
+" mainījušās. Tā kā tas ir suboptimāli, šo funkciju var izslēgt, iestatot šo"
+" slēdzi uz “aplams”. Ņemiet vērā, ka šī opcija tiks izņemta, kad tiks atrasts"
+" labāks veids, kā sekot izmaiņām."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:173
+msgid "Enabled relocatable schema mapping facilities"
+msgstr "Ieslēdz pārvietojamo shēmu kartēšanas iespējas"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:174
+msgid ""
+"Flags for the relocatable schemas mapping facilities. “User” enables "
+"mappings defined by the “relocatable-schemas-user-paths” key; “Built-in” "
+"enables well-known mappings hardcoded into Dconf Editor; “Internal” is "
+"reserved for Dconf Editor own mappings; “Startup” is for mapping a "
+"relocatable schema from the command-line."
+msgstr ""
+"Slēdži pārvietojamu shēmu kartēšanas iespējām. “User” ieslēdz kartējumus, kas"
+" ir definēti atslēgā “relocatable-schemas-user-paths”; “Built-in” ieslēdz"
+" labi zināmus kartējumus, kas ir iebūvēti Dconf redaktorā; “Internal” ir"
+" rezervēts paša Dconf redaktora kartējumiem; “Startup” ir pārvietojamas"
+" shēmas kartēšanai no komandrindas."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:178
+msgid "Mapping of paths to manually associated schemas"
+msgstr "Ceļu kartēšana uz manuāli asociētām shēmām"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:179
+msgid ""
+"A dictionary that maps schema IDs with path specifications. It is used to "
+"allow the user to associate a relocatable schema to certain paths. Path "
+"specifications may contain wildcards in the form of empty segments (e.g. /ca/"
+"desrt/dconf-editor//), defining possibly multiple paths. The same schema ID "
+"may be associated with multiple path specifications."
+msgstr ""
+"Direktorija, kas kartē shēmas ID ar ceļa specifikācijām. To izmanto, lai"
+" ļautu lietotājam asociēt pārvietojamo shēmu ar noteiktiem ceļiem. Ceļa"
+" specifikācija var saturēt aizstājējzīmes tukšu segmentu formā (piemēram,"
+" /ca/desrt/dconf-editor//), definējot, iespējams, vairākus ceļus. To pašu"
+" shēmas ID var asociēt ar vairākām ceļu specifikācijām."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:185
+msgid "A list of bookmarked paths"
+msgstr "Saraksts ar ceļiem grāmatzīmēs"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:186
+msgid "Contains all paths bookmarked by the user as an array of strings."
+msgstr ""
+"Satur visus ceļus (kā virkņu masīvu), kurus lietotājs ir pievienojis "
+"grāmatzīmēm."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:211
+#: editor/ca.desrt.dconf-editor.gschema.xml:345
+msgid "A boolean, type ‘b’"
 msgstr "Būla vērtība, tips “b”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:23
-msgid "Booleans can only take two values, \"true\" or \"false\"."
+#: editor/ca.desrt.dconf-editor.gschema.xml:212
+msgid "Booleans can only take two values, “true” or “false”."
 msgstr "Būla vērtība var būt tikai “patiess” vai “aplams”."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:24
-msgid "A nullable boolean, type \"mb\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:216
+msgid "A nullable boolean, type ‘mb’"
 msgstr "Nullējama Būla vērtība, tips “mb”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:25
+#: editor/ca.desrt.dconf-editor.gschema.xml:217
 msgid ""
 "GSettings allows nullable types, that are similar to other types but could "
-"take a \"nothing\" value. A nullable boolean can only take three values, "
-"\"true\", \"false\" and \"nothing\"."
+"take a “nothing” value. A nullable boolean can only take three values, "
+"“true”, “false” and “nothing”."
 msgstr ""
 "GSettings atļauj nullējamus tipus, tie ir līdzīgi citiem tipiem, bet var būt "
 "ar vērtību “nekas”. Nullējama Būla vērtība var būt tikai “patiess”, “aplams” "
 "un “nekas”."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:26
-msgid "A byte (unsigned), type \"y\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:221
+msgid "A byte (unsigned), type ‘y’"
 msgstr "Baits (bez zīmes), tips “y”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:27
+#: editor/ca.desrt.dconf-editor.gschema.xml:222
 msgid ""
 "A byte value is an integer between 0 and 255. It may be used to pass around "
 "characters."
@@ -269,11 +398,11 @@ msgstr ""
 "Baita vērtība ir vesels skaitlis no 0 līdz 255. To var izmantot, lai nodotu "
 "rakstzīmes."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:28
-msgid "A bytestring, type \"ay\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:226
+msgid "A bytestring, type ‘ay’"
 msgstr "Baitu virkne, tips “ay”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:29
+#: editor/ca.desrt.dconf-editor.gschema.xml:227
 msgid ""
 "The bytestring type is commonly used to pass around strings that may not be "
 "valid utf8. In that case, the convention is that the nul terminator "
@@ -283,11 +412,11 @@ msgstr ""
 "derīga utf8. Jebkurā gadījumā, masīva beigās vajag ievietot nobeiguma nulles "
 "rakstzīmi."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:30
-msgid "A bytestring array, type \"aay\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:231
+msgid "A bytestring array, type ‘aay’"
 msgstr "Baitu virkņu masīvs, tips “aay”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:31
+#: editor/ca.desrt.dconf-editor.gschema.xml:232
 msgid ""
 "This is the type of an array of bytestrings. The bytestring type is commonly "
 "used to pass around strings that may not be valid utf8."
@@ -295,580 +424,831 @@ msgstr ""
 "Šis ir bitu virknes masīva veids. Bitu virknes ripu parasti izmanto, lai "
 "nodotu virknes, kas var nebūt derīgas utf8."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:32
-msgid "A D-Bus handle type, type \"h\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:236
+msgid "A D-Bus handle type, type ‘h’"
 msgstr "D-Bus tura tips, tips “h”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:33
+#: editor/ca.desrt.dconf-editor.gschema.xml:237
+#| msgid ""
+#| "The handle type is a 32bit signed integer value that is, by convention, "
+#| "used as an index into an array of file descriptors that are sent "
+#| "alongside a D-Bus message. If you are not interacting with D-Bus, then "
+#| "there is no reason to make use of this type."
 msgid ""
-"The handle type is a 32bit signed integer value that is, by convention, used "
-"as an index into an array of file descriptors that are sent alongside a D-"
-"Bus message.\n"
-"\n"
-"If you are not interacting with D-Bus, then there is no reason to make use "
-"of this type."
+"The handle type is a 32-bit signed integer value that is, by convention, "
+"used as an index into an array of file descriptors that are sent alongside a "
+"D-Bus message. If you are not interacting with D-Bus, then there is no "
+"reason to make use of this type."
 msgstr ""
-"Tura tips ir 32bitu vesels skaitlis ar zīmi, kuru parasti izmanto kā datņu "
-"deskriptoru masīva indeksu, ko sūta kopā ar D-Bus ziņojumu.\n"
-"\n"
-"Ja neizmantojat D-Bus, nav iemesla izmantot šo tipu."
+"Tura tips ir 32 bitu vesels skaitlis ar zīmi, kuru parasti izmanto kā datņu "
+"deskriptoru masīva indeksu, ko sūta kopā ar D-Bus ziņojumu. Ja neizmantojat "
+"D-Bus, nav iemesla izmantot šo tipu."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:36
-msgid "A D-Bus object path, type \"o\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:241
+msgid "A D-Bus object path, type ‘o’"
 msgstr "D-Bus objekta ceļš, tips “o”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:37
+#: editor/ca.desrt.dconf-editor.gschema.xml:242
 msgid ""
 "An object path is used to identify D-Bus objects at a given destination on "
-"the bus.\n"
-"\n"
-"If you are not interacting with D-Bus, then there is no reason to make use "
-"of this type."
+"the bus. If you are not interacting with D-Bus, then there is no reason to "
+"make use of this type."
 msgstr ""
 "Objekta ceļu izmanto, lai identificētu D-Bus objektus dotajā mērķī uz "
-"kopnes.\n"
-"\n"
-"Ja neizmantojat D-Bus, nav iemesla izmantot šo tipu."
+"kopnes. Ja neizmantojat D-Bus, nav iemesla izmantot šo tipu."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:40
-msgid "A D-Bus object path array, type \"ao\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:246
+msgid "A D-Bus object path array, type ‘ao’"
 msgstr "D-Bus objekta ceļu masīvs, tips “ao”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:41
+#: editor/ca.desrt.dconf-editor.gschema.xml:247
 msgid ""
 "An object path array could contain any number of object paths (including "
-"none: \"[]\").\n"
-"\n"
-"If you are not interacting with D-Bus, then there is no reason to make use "
-"of this type."
+"none: “[]”). If you are not interacting with D-Bus, then there is no reason "
+"to make use of this type."
 msgstr ""
 "Objekta ceļu masīvs var saturēt dažādu skaitu objektu ceļus (tai skaitā "
-"nevienu: “[]”).\n"
-"\n"
-"Ja neizmantojat D-Bus, nav iemesla izmantot šo tipu."
+"nevienu: “[]”). Ja neizmantojat D-Bus, nav iemesla izmantot šo tipu."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:44
-msgid "A D-Bus signature, type \"g\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:251
+msgid "A D-Bus signature, type ‘g’"
 msgstr "D-Bus paraksts, tips “g”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:45
+#: editor/ca.desrt.dconf-editor.gschema.xml:252
 msgid ""
 "A D-Bus signature is a string used as type signature for a D-Bus method or "
-"message.\n"
-"\n"
-"If you are not interacting with D-Bus, then there is no reason to make use "
-"of this type."
+"message. If you are not interacting with D-Bus, then there is no reason to "
+"make use of this type."
 msgstr ""
 "D-Bus paraksts ir virkne, ko izmanto kā tipa parakstu D-Bus metodei vai "
-"ziņojumam.\n"
-"\n"
-"Ja neizmantojat D-Bus, nav iemesla izmantot šo tipu."
+"ziņojumam. Ja neizmantojat D-Bus, nav iemesla izmantot šo tipu."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:48
-msgid "A double, type \"d\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:256
+msgid "A double, type ‘d’"
 msgstr "Dubulta, tips “d”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:49
+#: editor/ca.desrt.dconf-editor.gschema.xml:257
 msgid "A double value could represent any real number."
 msgstr "Dubulta vērtība, kas var attēlot jebkuru reālu skaitli."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:50
+#: editor/ca.desrt.dconf-editor.gschema.xml:261
 msgid "A 5-choices enumeration"
 msgstr "5 izvēļu uzskaitījums"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:51
+#: editor/ca.desrt.dconf-editor.gschema.xml:262
 msgid ""
-"Enumerations could be done either with the \"enum\" attribute, or with a "
-"\"choices\" tag."
+"Enumerations could be done either with the “enum” attribute, or with a "
+"“choices” tag."
 msgstr "Uzskaitīšanu var veikt ar “enum” atribūtu, vai ar “choices” tagu."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:52
-msgid "A short integer, type \"n\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:266
+msgid "A short integer, type ‘n’"
 msgstr "īss vesels skaitlis, tips “n”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:53
-msgid "A 16bit signed integer. See also the \"integer-16-unsigned\" key."
+#: editor/ca.desrt.dconf-editor.gschema.xml:267
+#| msgid "A 16bit signed integer. See also the “integer-16-unsigned” key."
+msgid "A 16-bit signed integer. See also the “integer-16-unsigned” key."
 msgstr ""
 "16 bitu vesels skaitlis ar zīmi. Skatiet arī atslēgu “integer-16-unsigned”."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:54
+#: editor/ca.desrt.dconf-editor.gschema.xml:271
+#: editor/ca.desrt.dconf-editor.gschema.xml:355
 msgid "Flags: choose-colors-you-love"
 msgstr "Karogi: choose-colors-you-love"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:55
-msgid "Flags could be set by the \"enum\" attribute."
+#: editor/ca.desrt.dconf-editor.gschema.xml:272
+#: editor/ca.desrt.dconf-editor.gschema.xml:356
+msgid "Flags could be set by the “enum” attribute."
 msgstr "Karogus var iestatīt ar “enum” atribūtu."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:56
-msgid "An unsigned short integer, type \"q\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:276
+msgid "An unsigned short integer, type ‘q’"
 msgstr "Īss vesels skaitlis bez zīmes, tips “q”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:57
-msgid "A 16bit unsigned integer. See also the \"integer-16-signed\" key."
+#: editor/ca.desrt.dconf-editor.gschema.xml:277
+#| msgid "A 16bit unsigned integer. See also the “integer-16-signed” key."
+msgid "A 16-bit unsigned integer. See also the “integer-16-signed” key."
 msgstr ""
 "16 bitu vesels skaitlis bez zīmes. Skatiet arī atslēgu “integer-16-signed”."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:58
-msgid "An usual integer, type \"i\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:281
+#: editor/ca.desrt.dconf-editor.gschema.xml:350
+msgid "An usual integer, type ‘i’"
 msgstr "Parasts vesels skaitlis, tips “i”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:59
-msgid "A 32bit signed integer. See also the \"integer-32-unsigned\" key."
+#: editor/ca.desrt.dconf-editor.gschema.xml:282
+#| msgid "A 32bit signed integer. See also the “integer-32-unsigned” key."
+msgid "A 32-bit signed integer. See also the “integer-32-unsigned” key."
 msgstr ""
 "32 bitu vesels skaitlis ar zīmi. Skatiet arī atslēgu “integer-32-unsigned”."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:60
-msgid "An unsigned usual integer, type \"u\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:286
+msgid "An unsigned usual integer, type ‘u’"
 msgstr "Parasts vesels skaitlis bez zīmes, tips “u”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:61
-msgid "A 32bit unsigned integer. See also the \"integer-32-signed\" key."
+#: editor/ca.desrt.dconf-editor.gschema.xml:287
+#| msgid "A 32bit unsigned integer. See also the “integer-32-signed” key."
+msgid "A 32-bit unsigned integer. See also the “integer-32-signed” key."
 msgstr ""
 "32 bitu vesels skaitlis bez zīmes. Skatiet arī atslēgu “integer-32-signed”."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:62
-msgid "A long integer, type \"x\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:291
+msgid "A long integer, type ‘x’"
 msgstr "Garš vesels skaitlis, tips “x”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:63
-msgid "A 64bit signed integer. See also the \"integer-64-unsigned\" key."
+#: editor/ca.desrt.dconf-editor.gschema.xml:292
+#| msgid "A 64bit signed integer. See also the “integer-64-unsigned” key."
+msgid "A 64-bit signed integer. See also the “integer-64-unsigned” key."
 msgstr ""
 "64 bitu vesels skaitlis ar zīmi. Skatiet arī atslēgu “integer-64-unsigned”."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:64
-msgid "An unsigned long integer, type \"t\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:296
+msgid "An unsigned long integer, type ‘t’"
 msgstr "Garš vesels skaitlis bez zīmes, tips “t”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:65
-msgid "A 64bit unsigned integer. See also the \"integer-64-signed\" key."
+#: editor/ca.desrt.dconf-editor.gschema.xml:297
+#| msgid "A 64bit unsigned integer. See also the “integer-64-signed” key."
+msgid "A 64-bit unsigned integer. See also the “integer-64-signed” key."
 msgstr ""
 "64 bitu vesels skaitlis bez zīmes. Skatiet arī atslēgu “integer-64-signed”."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:66
+#: editor/ca.desrt.dconf-editor.gschema.xml:303
 msgid "A number with range"
 msgstr "Skaitlis ar apgabalu"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:67
+#: editor/ca.desrt.dconf-editor.gschema.xml:304
 msgid ""
 "Every numeral setting (integers and unsigned integers of every type, plus "
 "doubles) could be limited to a custom range of values. For example, this "
-"integer could only take a value between -5 and 9."
+"integer could only take a value between -2 and 10."
 msgstr ""
 "Katru skaitlisko iestatījumu (visi veselie skaitļi ar un bez zīmes, kā arī "
 "dubultās vērtības) var ierobežot uz kādu vērtību intervālu. Piemēram, šis "
-"veselais skaitlis var būt tikai intervālā no -5 līdz 9."
+"veselais skaitlis var būt tikai intervālā no -2 līdz 10."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:68
-msgid "A custom type, here \"(ii)\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:308
+msgid "A custom type, here ‘(ii)’"
 msgstr "Pielāgots tips, šeit “(ii)”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:69
+#: editor/ca.desrt.dconf-editor.gschema.xml:309
+#| msgid ""
+#| "Dconf Editor lets you edit any settings type supported by GSettings, "
+#| "falling back on a string entry when it doesn’t have a better way to do. "
+#| "Here is a tuple of two 32bit signed integers."
 msgid ""
 "Dconf Editor lets you edit any settings type supported by GSettings, falling "
-"back on a string entry when it doesn't have a better way to do. Here is a "
-"tuple of two 32bit signed integers."
+"back on a string entry when it doesn’t have a better way to do. Here is a "
+"tuple of two 32-bit signed integers."
 msgstr ""
 "Dconf redaktors jums ļauj rediģēt jebkurus iestatījumus, ko atbalsta "
 "GSettings, ja tas nezina, ko ar to iesākt, tas atkāpjas uz virknes ierakstu. "
 "Šeit ir kortežs ar diviem 32 bitu veseliem skaitļiem ar zīmi."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:70
-msgid "A string, type \"s\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:313
+msgid "A string, type ‘s’"
 msgstr "Virkne, tips “s”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:71
+#: editor/ca.desrt.dconf-editor.gschema.xml:314
 msgid ""
-"The string type could accept any utf8 string. Note that an empty string "
-"\"''\" is not the same as NULL (nothing); see also the \"string-nullable\" "
-"key."
+"The string type could accept any utf8 string. Note that an empty string “''” "
+"is not the same as NULL (nothing); see also the “string-nullable” key."
 msgstr ""
 "Virknes tips var pieņemt jebkuru utf8 virkni. Ņemiet vērā, ka tukšā virkne "
 "“''” nav tas pats kas NULL (nekas); skatiet arī “string-nullable” atslēgu."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:72
-msgid "A string array, type \"as\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:318
+msgid "A string array, type ‘as’"
 msgstr "Virkņu masīvs, tips “as”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:73
+#: editor/ca.desrt.dconf-editor.gschema.xml:319
 msgid ""
 "A string array contains any number of strings of whatever length. It may be "
-"an empty array, \"[]\"."
+"an empty array, “[]”."
 msgstr ""
 "Virknes masīvs var saturēt dažādu skaitu virkņu. Tas var būt arī tukšs "
 "masīvs “[]”."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:74
-msgid "A nullable string, type \"ms\""
+#: editor/ca.desrt.dconf-editor.gschema.xml:323
+msgid "A nullable string, type ‘ms’"
 msgstr "Nullējama virkne, tips “ms”"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:75
+#: editor/ca.desrt.dconf-editor.gschema.xml:324
 msgid ""
 "GSettings allows nullable types, that are similar to other types but could "
-"take a \"nothing\" value. A nullable string can take any string as value, "
-"including the empty string \"''\", or can be NULL (nothing)."
+"take a “nothing” value. A nullable string can take any string as value, "
+"including the empty string “''”, or can be NULL (nothing)."
 msgstr ""
 "GSettings atļauj nullējamus tipus, tie ir līdzīgi citiem tipiem, bet var būt "
 "ar vērtību “nekas”. Nullējama virkne var būt ar jebkuru virknes vērtību, tai "
 "skaitā tukša virkne “''”, bet var būt arī NULL (nekas)."
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:76
-#| msgid "A 5-choices enumeration"
+#: editor/ca.desrt.dconf-editor.gschema.xml:328
 msgid "A 1-choice enumeration"
 msgstr "1 izvēles uzskaitījums"
 
-#: ../editor/ca.desrt.dconf-editor.gschema.xml.h:77
+#: editor/ca.desrt.dconf-editor.gschema.xml:329
 msgid ""
-"An enumeration could contain only one item, but that's probably an error. "
+"An enumeration could contain only one item, but that’s probably an error. "
 "Dconf Editor warns you in that case."
 msgstr ""
-"Uzskaitījums varēja saturēt tikai vienu vienumu, bet tā, visdrīzāk, ir kļūda."
-" Dconf redaktors tādos gadījumos jūs brīdinās."
+"Uzskaitījums varēja saturēt tikai vienu vienumu, bet tā, visdrīzāk, ir "
+"kļūda. Dconf redaktors tādos gadījumos jūs brīdinās."
 
-#: ../editor/dconf-editor-menu.ui.h:1
+#: editor/ca.desrt.dconf-editor.gschema.xml:334
+msgid "A 1-choice integer value"
+msgstr "1 izvēles veselā skaitļa vērtība"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:335
+msgid ""
+"A range could limit an integer key to only allow one value, but that’s "
+"probably an error. Dconf Editor warns you in that case."
+msgstr ""
+"Diapazons varētu ierobežot veselā skaitļa atslēgu uz tikai vienu vērtību, "
+"bet tā, visdrīzāk, ir kļūda. Dconf redaktors tādos gadījumos jūs brīdinās."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:346
+msgid "An usual boolean value, defined by a relocatable schema."
+msgstr "Parasta Būla vērtība, to definē pārvietojama shēma."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:351
+msgid "A 32-bit signed integer, defined by a relocatable schema."
+msgstr "32 bitu vesels skaitlis ar zīmi, to definē pārvietojama shēma."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:362
+msgid "A normal non-conflicting key from Conflict1"
+msgstr "Normāla nekonfliktējoša atslēga no Conflict1"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:363
+#: editor/ca.desrt.dconf-editor.gschema.xml:390
+msgid ""
+"This key is a test for multiple schemas in the same path with conflicting "
+"keys. Non-conflicting keys should have no issues."
+msgstr ""
+"Šī atslēga pārbauda vairākas shēmas vienā un tai pašā ceļā ar konfliktējošām"
+" atslēgām. Nekonfliktējošām atslēgām nevajadzētu izraisīt problēmas."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:367
+msgid "Conflicting key defaulting to “1” that should give an error"
+msgstr ""
+"Konfliktējošu atslēgu vērtība mainās uz noklusējuma “1”, kam vajadzētu dot"
+" kļūdu"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:368
+#: editor/ca.desrt.dconf-editor.gschema.xml:395
+msgid ""
+"This key is a test for multiple schemas in the same path with conflicting "
+"keys. It shouldn’t be editable as a key mapped to the same path has a "
+"different default value."
+msgstr ""
+"Šī atslēga pārbauda vairākas shēmas vienā un tai pašā ceļā ar konfliktējošām"
+" atslēgām. Tam nevajadzētu būt rediģējamam, jo atslēgai, kas kartējas uz to"
+" pašu ceļu, ir cita noklusējuma vērtība."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:372
+msgid "Conflicting key with no range that should give an error"
+msgstr "Konfliktējoša atslēga bez apgabala, kam vajadzētu dot kļūdu"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:373
+#: editor/ca.desrt.dconf-editor.gschema.xml:401
+msgid ""
+"This key is a test for multiple schemas in the same path with conflicting "
+"keys. It shouldn’t be editable as a key mapped to the same path has a "
+"different range."
+msgstr ""
+"Šī atslēga pārbauda vairākas shēmas vienā un tai pašā ceļā ar konfliktējošām"
+" atslēgām. Tam nevajadzētu būt rediģējamam, jo atslēgai, kas kartējas uz to"
+" pašu ceļu, ir cits apgabals."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:377
+msgid "A (simple) string conflicting key that should give a error"
+msgstr "Vienkāršas virknes konfliktējoša atslēga, kam vajadzētu dot kļūdu"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:378
+#: editor/ca.desrt.dconf-editor.gschema.xml:406
+msgid ""
+"This key is a test for multiple schemas in the same path with conflicting "
+"keys. It shouldn’t be editable as a key mapped to the same path has a "
+"different type."
+msgstr ""
+"Šī atslēga pārbauda vairākas shēmas vienā un tai pašā ceļā ar konfliktējošām"
+" atslēgām. Tam nevajadzētu būt rediģējamam, jo atslēgai, kas kartējas uz to"
+" pašu ceļu, ir cits tips."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:382
+msgid "Conflicting key from Conflict1 that should give a warning"
+msgstr "Konfliktējoša atslēga no Conflict1, kam vajadzētu dot brīdinājumu"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:383
+#: editor/ca.desrt.dconf-editor.gschema.xml:411
+msgid ""
+"This key is a test for multiple schemas in the same path with conflicting "
+"keys. It can be edited, since the types are compatible, but it is still an "
+"issue."
+msgstr ""
+"Šī atslēga pārbauda vairākas shēmas vienā un tai pašā ceļā ar konfliktējošām"
+" atslēgām. To var rediģēt, jo tipi ir savietojami, bet tā vēl aizvien ir"
+" problēma."
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:389
+msgid "A normal non-conflicting key from Conflict2"
+msgstr "Normāla nekonfliktējoša atslēga no Conflict2"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:394
+msgid "Conflicting key defaulting to “2” that should give an error"
+msgstr ""
+"Konfliktējošu atslēgu vērtība mainās uz noklusējuma “2”, kam vajadzētu dot"
+" kļūdu"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:400
+msgid "Conflicting key with range 0~5 that should give an error"
+msgstr "Konfliktējoša atslēga ar apgabalu 0~5, kam vajadzētu dot kļūdu"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:405
+msgid "A nullable-string conflicting key that should give an error"
+msgstr "Nenulles virknes konfliktējoša atslēga, kam vajadzētu dot kļūdu"
+
+#: editor/ca.desrt.dconf-editor.gschema.xml:410
+msgid "Conflicting key from Conflict2 that should give a warning"
+msgstr "Konfliktējoša atslēga no Conflict2, kam vajadzētu dot brīdinājumu"
+
+#: editor/dconf-editor-menu.ui:6
 msgid "Keyboard Shortcuts"
 msgstr "Tastatūras saīsnes"
 
-#: ../editor/dconf-editor-menu.ui.h:2
+#: editor/dconf-editor-menu.ui:10
 msgid "_About"
 msgstr "P_ar"
 
-#: ../editor/dconf-editor-menu.ui.h:3
+#: editor/dconf-editor-menu.ui:14
 msgid "_Quit"
 msgstr "I_ziet"
 
-#: ../editor/dconf-editor.ui.h:2
+#: editor/dconf-editor.ui:34
 msgid "Actions"
 msgstr "Darbības"
 
-#: ../editor/dconf-editor.ui.h:3
+#. TODO 1/3 Informations
+#: editor/dconf-editor.ui:35
 msgid "Current view actions"
 msgstr "Pašreizējo skatu darbības"
 
-#: ../editor/dconf-editor.ui.h:4
+#: editor/dconf-editor.ui:62
 msgid "Search"
 msgstr "Meklēt"
 
-#: ../editor/dconf-editor.ui.h:5
+#: editor/dconf-editor.ui:63
 msgid "Search keys"
 msgstr "Meklēt atslēgas"
 
-#: ../editor/dconf-editor.vala:22
+#: editor/dconf-editor.ui:160
+msgid "Refresh search results"
+msgstr "Atsvaidzināt meklēšanas rezultātus"
+
+#: editor/dconf-editor.vala:134
 msgid "Print release version and exit"
 msgstr "Parādīt informāciju par laidienu un iziet"
 
+#: editor/dconf-editor.vala:135
+#| msgid "Print release version and exit"
+msgid "Print relocatable schemas and exit"
+msgstr "Parādīt pārvietojamās shēmas un iziet"
+
+#: editor/dconf-editor.vala:137
+#| msgid "Show initial warning"
+msgid "Do not show initial warning"
+msgstr "Nerādīt sākotnējo brīdinājumu"
+
+#: editor/dconf-editor.vala:139
+msgid "[PATH|FIXED_SCHEMA [KEY]|RELOCATABLE_SCHEMA:PATH [KEY]]"
+msgstr "[CEĻŠ|FIKSĒTĀ_SHĒMA [ATSLĒGA]|PĀRVIETOJAMĀ_SHĒMA:CEĻŠ [ATSLĒGA]]"
+
+#: editor/dconf-editor.vala:229
+msgid "Known schemas installed:"
+msgstr "Zināmās instalētās shēmas:"
+
+#: editor/dconf-editor.vala:234
+msgid "No known schemas installed."
+msgstr "Nav zināmu instalēto shēmu."
+
+#: editor/dconf-editor.vala:238
+msgid "Known schemas skipped:"
+msgstr "Zināmās izlaistās shēmas:"
+
+#: editor/dconf-editor.vala:243
+msgid "No known schemas skipped."
+msgstr "Nav zināmu izlaisto shēmu."
+
+#: editor/dconf-editor.vala:247
+msgid "Unknown schemas:"
+msgstr "Nezināma shēma:"
+
+#: editor/dconf-editor.vala:252
+msgid "No unknown schemas."
+msgstr "Nav nezināmu shēmu."
+
+#: editor/dconf-editor.vala:323
+msgid "Only one window can be opened for now.\n"
+msgstr "Pašlaik var atvērt tikai vienu logu.\n"
+
+#: editor/dconf-editor.vala:342
+msgid "Cannot understand: too many arguments.\n"
+msgstr "Nevar saprast — pārāk daudz argumentu.\n"
+
+#: editor/dconf-editor.vala:352
+msgid "Cannot understand second argument in this context.\n"
+msgstr "Nevar saprast otro argumentu šajā kontekstā.\n"
+
+#: editor/dconf-editor.vala:372
+msgid "Cannot understand: slash character in second argument.\n"
+msgstr "Nevar saprast — šķērssvītras rakstzīme otrajā argumentā.\n"
+
+#: editor/dconf-editor.vala:386
+msgid "Schema path should start and end with a “/”.\n"
+msgstr "Shēmas ceļam vajadzētu sākties un beigties ar “/”.\n"
+
+#: editor/dconf-editor.vala:399
+msgid "Cannot understand: space character in argument.\n"
+msgstr "Nevar saprast — atstarpes rakstzīme argumentā.\n"
+
 #. #. * * Copy action
-#. #: ../editor/dconf-editor.vala:96
+#. #: editor/dconf-editor.vala:423
 msgid "Copied to clipboard"
 msgstr "Kopēts starpliktuvē"
 
-#: ../editor/dconf-editor.vala:150
+#: editor/dconf-editor.vala:478
+msgid "A graphical viewer and editor of applications’ internal settings."
+msgstr "Lietotņu iekšējo iestatījumu grafiskais skatītājs un redaktors."
+
+#: editor/dconf-editor.vala:479
 msgid ""
 "Copyright © 2010-2014 – Canonical Ltd\n"
-"Copyright © 2015-2016 – Arnaud Bonatti"
+"Copyright © 2015-2018 – Arnaud Bonatti\n"
+"Copyright © 2017-2018 – Davi da Silva Böger"
 msgstr ""
 "Autortiesības © 2010-2014 – Canonical Ltd\n"
-"Autortiesības © 2015-2016  – Arnaud Bonatti"
+"Autortiesības © 2015-2018 – Arnaud Bonatti\n"
+"Autortiesības © 2017-2018 – Davi da Silva Böger"
 
-#: ../editor/dconf-editor.vala:154
+#: editor/dconf-editor.vala:483
 msgid "translator-credits"
 msgstr "Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>"
 
-#: ../editor/dconf-model.vala:189
-msgid "Boolean"
-msgstr "Būla"
-
-#: ../editor/dconf-model.vala:191
-msgid "String"
-msgstr "Virkne"
-
-#: ../editor/dconf-model.vala:193
-msgid "String array"
-msgstr "Virkņu masīvs"
-
-#: ../editor/dconf-model.vala:195
-msgid "Enumeration"
-msgstr "Uzskaitījums"
-
-#: ../editor/dconf-model.vala:197
-msgid "Flags"
-msgstr "Karogi"
-
-#: ../editor/dconf-model.vala:199
-msgid "Double"
-msgstr "Dubults"
-
-#. Translators: this handle type is an index; you may maintain the word "handle"
-#: ../editor/dconf-model.vala:202
-msgid "D-Bus handle type"
-msgstr "D-Bus tura tips"
-
-#: ../editor/dconf-model.vala:204
-msgid "D-Bus object path"
-msgstr "D-Bus objektu ceļš"
-
-#: ../editor/dconf-model.vala:206
-msgid "D-Bus object path array"
-msgstr "D-Bus objektu ceļa masīvs"
-
-#: ../editor/dconf-model.vala:208
-msgid "D-Bus signature"
-msgstr "D-Bus paraksts"
-
-#: ../editor/dconf-model.vala:216
-#| msgid "Integer [%s..%s]"
-msgid "Integer"
-msgstr "Vesels skaitlis"
-
-#: ../editor/dconf-model.vala:300
-msgid "True"
-msgstr "Patiess"
-
-#: ../editor/dconf-model.vala:302
-msgid "False"
-msgstr "Aplams"
-
-#: ../editor/dconf-model.vala:303
-msgid "Nothing"
-msgstr "Nekas"
-
-#: ../editor/dconf-model.vala:308
-msgid "true"
-msgstr "patiess"
-
-#: ../editor/dconf-model.vala:310
-msgid "false"
-msgstr "aplams"
-
-#. Translators: "nothing" here is a keyword that should appear for consistence; please translate as "yourtranslation (nothing)"
-#: ../editor/dconf-model.vala:312
-msgid "nothing"
-msgstr "nekas"
-
-#: ../editor/dconf-view.vala:432
-msgid "This value is invalid for the key type."
-msgstr "Šī vērtība nav derīga šim atslēgas tipam."
-
-#: ../editor/dconf-window.vala:122
-msgid "Thanks for using Dconf Editor for editing your settings!"
-msgstr ""
-"Paldies, ka izmantojat Dconf redaktoru, lai rediģētu savu konfigurāciju!"
-
-#: ../editor/dconf-window.vala:123
-msgid "Don’t forget that some options may break applications, so be careful."
-msgstr ""
-"Neaizmirstiet, ka dažas opcijas var salauzt lietotnes, tāpēc esat uzmanīgi."
-
-#: ../editor/dconf-window.vala:124
-msgid "I’ll be careful."
-msgstr "Es būšu uzmanīgs."
-
-#. TODO don't show box if the user explicitely said she wanted to see the dialog next time?
-#: ../editor/dconf-window.vala:128
-msgid "Show this dialog next time."
-msgstr "Nākamajā reizē rādīt šo dialoglodziņu."
-
-#: ../editor/dconf-window.vala:232
-msgid "Copy current path"
-msgstr "Kopēt pašreizējo ceļu"
-
-#: ../editor/dconf-window.vala:237
-msgid "Reset visible keys"
-msgstr "Atiestatīt redzamās atslēgas"
-
-#: ../editor/dconf-window.vala:238
-msgid "Reset recursively"
-msgstr "Atiestatīt rekursīvi"
-
-#: ../editor/dconf-window.vala:246
-msgid "Enter delay mode"
-msgstr "Ieiet aizkaves režīmā"
-
-#: ../editor/help-overlay.ui.h:1
-msgctxt "shortcut window"
-msgid "Actions"
-msgstr "Darbības"
-
-#: ../editor/help-overlay.ui.h:2
-msgctxt "shortcut window"
-msgid "Bookmarks menu"
-msgstr "Grāmatzīmju izvēlne"
-
-#: ../editor/help-overlay.ui.h:3
-msgctxt "shortcut window"
-msgid "Bookmark this path"
-msgstr "Pievienot šo ceļu grāmatzīmēm"
-
-#: ../editor/help-overlay.ui.h:4
-msgctxt "shortcut window"
-msgid "Unbookmark this path"
-msgstr "Noņemt šo ceļu no grāmatzīmēm"
-
-#: ../editor/help-overlay.ui.h:5
-msgctxt "shortcut window"
-msgid "Search bar"
-msgstr "Meklēšanas josla"
-
-#: ../editor/help-overlay.ui.h:6
-msgctxt "shortcut window"
-msgid "Actions menu"
-msgstr "Darbību izvēlne"
-
-#: ../editor/help-overlay.ui.h:7
-#| msgid "Current view actions"
-msgctxt "shortcut window"
-msgid "Current row menu"
-msgstr "Pašreizējā rindu izvēlne"
-
-#: ../editor/help-overlay.ui.h:8
-msgctxt "shortcut window"
-msgid "Clipboard"
-msgstr "Starpliktuve"
-
-#: ../editor/help-overlay.ui.h:9
-msgctxt "shortcut window"
-msgid "Copy descriptor"
-msgstr "Kopēt deskriptoru"
-
-#: ../editor/help-overlay.ui.h:10
-msgctxt "shortcut window"
-msgid "Copy path"
-msgstr "Kopēt ceļu"
-
-#: ../editor/help-overlay.ui.h:11
-#| msgctxt "shortcut window"
-#| msgid "Tree navigation"
-msgctxt "shortcut window"
-msgid "Path bar navigation"
-msgstr "Ceļa joslas navigācija"
-
-#: ../editor/help-overlay.ui.h:12
-msgctxt "shortcut window"
-msgid "Open root folder"
-msgstr "Atvērt saknes mapi"
-
-#: ../editor/help-overlay.ui.h:13
-msgctxt "shortcut window"
-msgid "Open parent folder"
-msgstr "Atvērt vecāka mapi"
-
-#: ../editor/help-overlay.ui.h:14
-msgctxt "shortcut window"
-msgid "Open active direct child"
-msgstr "Atvērt aktīvo tiešo bērnu"
-
-#: ../editor/help-overlay.ui.h:15
-msgctxt "shortcut window"
-msgid "Open active last child"
-msgstr "Atvērt aktīvo pēdējo bērnu"
-
-#: ../editor/help-overlay.ui.h:16
-msgctxt "shortcut window"
-msgid "Generic"
-msgstr "Vispārējs"
-
-#: ../editor/help-overlay.ui.h:17
-msgctxt "shortcut window"
-msgid "Show this help"
-msgstr "Rādīt šo palīdzību"
-
-#: ../editor/help-overlay.ui.h:18
-msgctxt "shortcut window"
-msgid "About"
-msgstr "Par"
-
-#: ../editor/help-overlay.ui.h:19
-msgctxt "shortcut window"
-msgid "Quit"
-msgstr "Iziet"
-
-#: ../editor/key-list-box-row.vala:162
-msgid "No Schema Found"
-msgstr "Nav atrastu shēmu"
-
-#: ../editor/key-list-box-row.vala:171
-msgid "Key erased."
-msgstr "Atslēga dzēsta."
-
-#: ../editor/key-list-box-row.vala:187
+#: editor/dconf-model.vala:400
 #, c-format
 msgid "%s (key erased)"
 msgstr "%s (atslēga dzēsta)"
 
-#. Translators: "open key-editor dialog" action in the right-click menu on the list of keys
-#: ../editor/key-list-box-row.vala:389
+#: editor/dconf-view.vala:259
+msgid "Failed to parse as double."
+msgstr "Neizdevās parsēt kā dubulta platuma peldošā komata skaitli."
+
+#: editor/dconf-view.vala:512 editor/dconf-view.vala:605
+msgid "This value is invalid for the key type."
+msgstr "Šī vērtība nav derīga šim atslēgas tipam."
+
+#: editor/dconf-window.vala:115
+msgid "Schema is relocatable, a path is needed."
+msgstr "Shēma ir pārvietojama, ir nepieciešams ceļš."
+
+#: editor/dconf-window.vala:127
+msgid "Startup mappings are disabled."
+msgstr "Startēšanas kartējumi ir izslēgti."
+
+#: editor/dconf-window.vala:141
+msgid "Schema is not installed on given path."
+msgstr "Shēma nav instalēta uz dotā ceļa."
+
+#: editor/dconf-window.vala:156
+#, c-format
+#| msgid "Cannot find folder “%s”."
+msgid "Unknown schema “%s”."
+msgstr "Nezināma shēma “%s”."
+
+#: editor/dconf-window.vala:286
+msgid "Thanks for using Dconf Editor for editing your settings!"
+msgstr ""
+"Paldies, ka izmantojat Dconf redaktoru, lai rediģētu savu konfigurāciju!"
+
+#: editor/dconf-window.vala:287
+msgid "Don’t forget that some options may break applications, so be careful."
+msgstr ""
+"Neaizmirstiet, ka dažas opcijas var salauzt lietotnes, tāpēc esat uzmanīgi."
+
+#: editor/dconf-window.vala:288
+msgid "I’ll be careful."
+msgstr "Es būšu uzmanīgs."
+
+#. TODO don't show box if the user explicitely said she wanted to see the dialog next time?
+#: editor/dconf-window.vala:292
+msgid "Show this dialog next time."
+msgstr "Nākamajā reizē rādīt šo dialoglodziņu."
+
+#: editor/dconf-window.vala:412
+#, c-format
+#| msgid "Key “%s” has been removed."
+msgid "Folder “%s” is now empty."
+msgstr "Mape “%s” tagad ir tukša."
+
+#. GAction parameter type switch is a little touchy, see pathbar.vala
+#: editor/dconf-window.vala:422
+#, c-format
+#| msgid "Key “%s” has been removed."
+msgid "Key “%s” has been deleted."
+msgstr "Atslēga “%s” tika izdzēsta."
+
+#: editor/dconf-window.vala:657
+#| msgctxt "shortcut window"
+#| msgid "Copy descriptor"
+msgid "Copy descriptor"
+msgstr "Kopēt deskriptoru"
+
+#: editor/dconf-window.vala:663
+msgid "Reset visible keys"
+msgstr "Atiestatīt redzamās atslēgas"
+
+#: editor/dconf-window.vala:664
+#| msgid "Reset recursively"
+msgid "Reset view recursively"
+msgstr "Atiestatīt skatu rekursīvi"
+
+#: editor/dconf-window.vala:672
+msgid "Enter delay mode"
+msgstr "Ieiet aizkaves režīmā"
+
+#: editor/dconf-window.vala:737
+msgid ""
+"The same mouse button is set for going backward and forward. Doing nothing."
+msgstr ""
+"Viena un tā pati peles poga ir iestatīta iet atpakaļ un uz priekšu. Neko"
+" nedara."
+
+#: editor/dconf-window.vala:997
+#, c-format
+#| msgid "Cannot find key “%s” here."
+msgid "Cannot find key “%s”."
+msgstr "Nevar atrast atslēgu “%s”."
+
+#: editor/dconf-window.vala:1001
+#, c-format
+#| msgid "Cannot find folder “%s”."
+msgid "There’s nothing in requested folder “%s”."
+msgstr "Pieprasītajā mapē “%s” nekā nav."
+
+#. Translators: "reset key value" option of a multi-choice list (checks or radios) in the right-click menu on the list of keys
+#: editor/delayed-setting-view.ui:79 editor/delayed-setting-view.ui:124
+#: editor/delayed-setting-view.vala:50 editor/delayed-setting-view.vala:59
+#: editor/key-list-box-row.vala:834 editor/registry-info.vala:348
+msgid "Default value"
+msgstr "Noklusējuma vērtība"
+
+#: editor/delayed-setting-view.vala:73
+#| msgid "Key erased."
+msgid "Key erased"
+msgstr "Atslēga dzēsta"
+
+#: editor/delayed-setting-view.vala:82 editor/key-list-box-row.vala:361
+#: editor/registry-info.vala:149
+msgid "Key erased."
+msgstr "Atslēga dzēsta."
+
+#: editor/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "Actions"
+msgstr "Darbības"
+
+#: editor/help-overlay.ui:15
+msgctxt "shortcut window"
+msgid "Bookmarks menu"
+msgstr "Grāmatzīmju izvēlne"
+
+#: editor/help-overlay.ui:22
+msgctxt "shortcut window"
+msgid "Bookmark this path"
+msgstr "Pievienot šo ceļu grāmatzīmēm"
+
+#: editor/help-overlay.ui:29
+msgctxt "shortcut window"
+msgid "Unbookmark this path"
+msgstr "Noņemt šo ceļu no grāmatzīmēm"
+
+#: editor/help-overlay.ui:36
+msgctxt "shortcut window"
+msgid "Search bar"
+msgstr "Meklēšanas josla"
+
+#: editor/help-overlay.ui:43
+msgctxt "shortcut window"
+msgid "Actions menu"
+msgstr "Darbību izvēlne"
+
+#: editor/help-overlay.ui:52
+msgctxt "shortcut window"
+msgid "Clipboard"
+msgstr "Starpliktuve"
+
+#: editor/help-overlay.ui:56
+msgctxt "shortcut window"
+msgid "Copy descriptor"
+msgstr "Kopēt deskriptoru"
+
+#: editor/help-overlay.ui:63
+msgctxt "shortcut window"
+msgid "Copy path"
+msgstr "Kopēt ceļu"
+
+#: editor/help-overlay.ui:72
+#| msgctxt "shortcut window"
+#| msgid "Keys list actions"
+msgctxt "shortcut window"
+msgid "Modifications list actions"
+msgstr "Modifikāciju saraksta darbības"
+
+#: editor/help-overlay.ui:76
+msgctxt "shortcut window"
+msgid "Toggle modifications list"
+msgstr "Pārslēgt modifikāciju sarakstu"
+
+#: editor/help-overlay.ui:83
+msgctxt "shortcut window"
+msgid "Open selected row key"
+msgstr "Atvērt izvēlētās rindas atslēgu"
+
+#: editor/help-overlay.ui:90
+#| msgid "Dismiss change"
+msgctxt "shortcut window"
+msgid "Dismiss modification"
+msgstr "Atmest izmaiņas"
+
+#: editor/help-overlay.ui:99
+msgctxt "shortcut window"
+msgid "Path bar navigation"
+msgstr "Ceļa joslas navigācija"
+
+#: editor/help-overlay.ui:103
+msgctxt "shortcut window"
+msgid "Open root folder"
+msgstr "Atvērt saknes mapi"
+
+#: editor/help-overlay.ui:110
+msgctxt "shortcut window"
+msgid "Open parent folder"
+msgstr "Atvērt vecāka mapi"
+
+#: editor/help-overlay.ui:117
+msgctxt "shortcut window"
+msgid "Open active direct child"
+msgstr "Atvērt aktīvo tiešo bērnu"
+
+#: editor/help-overlay.ui:124
+msgctxt "shortcut window"
+msgid "Open active last child"
+msgstr "Atvērt aktīvo pēdējo bērnu"
+
+#: editor/help-overlay.ui:133
+msgctxt "shortcut window"
+msgid "Keys list actions"
+msgstr "Atslēgu sarakstu darbības"
+
+#: editor/help-overlay.ui:137
+msgctxt "shortcut window"
+msgid "Contextual menu"
+msgstr "Konteksta izvēlne"
+
+#: editor/help-overlay.ui:144
+msgctxt "shortcut window"
+msgid "Set to default"
+msgstr "Iestatīt uz noklusējuma"
+
+#: editor/help-overlay.ui:151
+msgctxt "shortcut window"
+msgid "Toggle boolean value"
+msgstr "Pārslēgt Būla vērtību"
+
+#: editor/help-overlay.ui:160
+msgctxt "shortcut window"
+msgid "Generic"
+msgstr "Vispārējs"
+
+#: editor/help-overlay.ui:164
+msgctxt "shortcut window"
+msgid "Show this help"
+msgstr "Rādīt šo palīdzību"
+
+#: editor/help-overlay.ui:171
+msgctxt "shortcut window"
+msgid "About"
+msgstr "Par"
+
+#: editor/help-overlay.ui:178
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Iziet"
+
+#: editor/key-list-box-row.vala:343
+msgid "No Schema Found"
+msgstr "Nav atrastu shēmu"
+
+#: editor/key-list-box-row.vala:467 editor/registry-info.vala:121
+msgid "No summary provided"
+msgstr "Nav dots kopsavilkums"
+
+#: editor/key-list-box-row.vala:481
+msgid "conflicting keys"
+msgstr "konfliktējošās atslēgas"
+
+#. Translators: "copy to clipboard" action in the right-click menu on the list of keys
+#: editor/key-list-box-row.vala:646
+msgid "Copy"
+msgstr "Kopēt"
+
+#. Translators: "open key-editor page" action in the right-click menu on the list of keys
+#: editor/key-list-box-row.vala:649
 msgid "Customize…"
 msgstr "Pielāgot…"
 
 #. Translators: "reset key value" action in the right-click menu on the list of keys
-#: ../editor/key-list-box-row.vala:392
+#: editor/key-list-box-row.vala:652
 msgid "Set to default"
 msgstr "Iestatīt uz noklusējuma"
 
+#. Translators: "open key-editor page" action in the right-click menu on the list of keys, when key is hard-conflicting
+#: editor/key-list-box-row.vala:657
+msgid "Show details…"
+msgstr "Rādīt papildu informāciju…"
+
 #. Translators: "dismiss change" action in the right-click menu on a key with pending changes
-#: ../editor/key-list-box-row.vala:397
+#: editor/key-list-box-row.vala:660
 msgid "Dismiss change"
 msgstr "Atmest izmaiņas"
 
-#. Translators: "open folder" action in the right-click menu on a folder
-#: ../editor/key-list-box-row.vala:400
-msgid "Open"
-msgstr "Atvērt"
-
 #. Translators: "erase key" action in the right-click menu on a key without schema
 #. Translators: "erase key" option in the right-click menu on a key without schema when on delayed mode
-#: ../editor/key-list-box-row.vala:403 ../editor/key-list-box-row.vala:525
-#: ../editor/registry-info.ui.h:2
+#: editor/key-list-box-row.vala:663 editor/key-list-box-row.vala:770
+#: editor/registry-info.ui:112
 msgid "Erase key"
 msgstr "Dzēst atslēgu"
 
+#. Translators: "open folder" action in the right-click menu on a folder
+#: editor/key-list-box-row.vala:666
+msgid "Open"
+msgstr "Atvērt"
+
+#. Translators: "open parent folder" action in the right-click menu on a folder in a search result
+#: editor/key-list-box-row.vala:669
+#| msgctxt "shortcut window"
+#| msgid "Open parent folder"
+msgid "Open parent folder"
+msgstr "Atvērt vecāka mapi"
+
+#. Translators: "reset recursively" action in the right-click menu on a folder
+#: editor/key-list-box-row.vala:672
+msgid "Reset recursively"
+msgstr "Atiestatīt rekursīvi"
+
 #. Translators: "dismiss change" action in the right-click menu on a key without schema planned to be erased
-#: ../editor/key-list-box-row.vala:406
+#: editor/key-list-box-row.vala:675
 msgid "Do not erase"
 msgstr "Nedzēst"
 
-#. Translators: "copy to clipboard" action in the right-click menu on the list of keys
-#: ../editor/key-list-box-row.vala:415
-msgid "Copy"
-msgstr "Kopēt"
-
 #. Translators: "no change" option in the right-click menu on a key when on delayed mode
-#: ../editor/key-list-box-row.vala:519
+#: editor/key-list-box-row.vala:764
 msgid "No change"
 msgstr "Nav izmaiņu"
 
-#. Translators: "reset key value" option of a multi-choice list (checks or radios) in the right-click menu on the list of keys
-#: ../editor/key-list-box-row.vala:569 ../editor/registry-info.vala:235
-msgid "Default value"
-msgstr "Noklusējuma vērtība"
-
-#: ../editor/modifications-revealer.ui.h:1
+#: editor/modifications-revealer.ui:66
 msgid "Apply"
 msgstr "Pielietot"
 
-#: ../editor/modifications-revealer.vala:141
+#: editor/modifications-revealer.ui:104
+msgid "Delayed setting changes will be shown here"
+msgstr "Aizkavētās iestatījumu izmaiņas tiks parādītas šeit"
+
+#: editor/modifications-revealer.vala:115
+#: editor/modifications-revealer.vala:279
 msgid "Nothing to reset."
 msgstr "Nav ko atiestatīt."
 
-#: ../editor/modifications-revealer.vala:241
+#: editor/modifications-revealer.vala:258
 msgid "The value is invalid."
 msgstr "Vērtība nav derīga."
 
-#: ../editor/modifications-revealer.vala:245
+#: editor/modifications-revealer.vala:265
 msgid "The change will be dismissed if you quit this view without applying."
 msgstr ""
 "Izmaiņas tiks atmestas, ja iziesiet no šī skata, nepielietojot izmaiņas."
 
-#: ../editor/modifications-revealer.vala:247
+#: editor/modifications-revealer.vala:270
 msgid "The change will be applied on such request or if you quit this view."
 msgstr ""
-"Izmaiņas tik pielietotas, ja tas tiks pieprasīts vai, ja iziesiet no šī skata."
+"Izmaiņas tik pielietotas, ja tas tiks pieprasīts vai, ja iziesiet no šī "
+"skata."
 
-#: ../editor/modifications-revealer.vala:264
+#: editor/modifications-revealer.vala:291
 msgid "Changes will be delayed until you request it."
 msgstr "Izmaiņas tiks aizturētas, līdz to pieprasīsiet."
 
 #. Translators: "gsettings" is a technical term, notably a shell command, so you probably should not translate it.
-#: ../editor/modifications-revealer.vala:266
+#: editor/modifications-revealer.vala:293
 #, c-format
 msgid "One gsettings operation delayed."
 msgid_plural "%u gsettings operations delayed."
@@ -877,7 +1257,7 @@ msgstr[1] "%u gsettings darbības ir aizturētas."
 msgstr[2] "%u gsettings darbības ir aizturētas."
 
 #. Translators: "dconf" is a technical term, notably a shell command, so you probably should not translate it.
-#: ../editor/modifications-revealer.vala:270
+#: editor/modifications-revealer.vala:297
 #, c-format
 msgid "One dconf operation delayed."
 msgid_plural "%u dconf operations delayed."
@@ -887,14 +1267,13 @@ msgstr[2] "%u dconf darbības ir aizturētas."
 
 #. Translators: Beginning of a sentence like "One gsettings operation and 2 dconf operations delayed.", you could duplicate "delayed" if needed, as it refers to both the gsettings and dconf operations (at least one of each).
 #. Also, "gsettings" is a technical term, notably a shell command, so you probably should not translate it.
-#: ../editor/modifications-revealer.vala:273
+#: editor/modifications-revealer.vala:300
 #, c-format
 msgid "%s%s"
 msgstr "%s%s"
 
-#: ../editor/modifications-revealer.vala:273
+#: editor/modifications-revealer.vala:300
 #, c-format
-#| msgid "settings;configuration;"
 msgid "One gsettings operation"
 msgid_plural "%u gsettings operations"
 msgstr[0] "%u gsettings darbība"
@@ -905,7 +1284,7 @@ msgstr[2] "%u gsettings darbības"
 #. * the space before the "and" is probably wanted, and
 #. * the "delayed" refers to both the gsettings and dconf operations (at least one of each).
 #. Also, "dconf" is a technical term, notably a shell command, so you probably should not translate it.
-#: ../editor/modifications-revealer.vala:278
+#: editor/modifications-revealer.vala:305
 #, c-format
 msgid " and one dconf operation delayed."
 msgid_plural " and %u dconf operations delayed."
@@ -913,71 +1292,131 @@ msgstr[0] "un %u dconf darbība ir aizturēta."
 msgstr[1] "un %u dconf darbības ir aizturētas."
 msgstr[2] "un %u dconf darbības ir aizturētas."
 
-#: ../editor/registry-info.ui.h:1
-msgid ""
-"No schema available. Dconf Editor can’t find a schema associated with this "
-"key. The application that installed this key may have been removed, may have "
-"stop the use of this key, or may use a relocatable schema for defining its "
-"keys."
-msgstr ""
-"Nav pieejamu shēmu. Dconf redaktors nevar atrast shēmu, kas būtu saistīta ar "
-"šo atslēgu. Lietotne, kas instalēja šo atslēgu, varētu būt atinstalēta, "
-"varētu būt beigusi lietot šo atslēgu, vai varētu būt izmantojusi "
-"pārvietojamu shēmu šo atslēgu definēšanai."
+#: editor/pathbar.vala:313
+msgid "Copy current path"
+msgstr "Kopēt pašreizējo ceļu"
 
-#: ../editor/registry-info.ui.h:3
+#: editor/registry-info.ui:32
+msgid ""
+"This key is defined and used by more than one schema. This could lead to "
+"problems. Edit value at your own risk."
+msgstr ""
+"Atslēga ir definēta un to izmanto vairāk kā viena shēma. Tas var radīt"
+" problēmas. Vērtības rediģēšana var būt riskanta."
+
+#: editor/registry-info.ui:69
+msgid ""
+"This key is incompatibly defined and used by more than one schema. It is "
+"impossible to work with its value in a meaningful way."
+msgstr ""
+"Atslēga ir nesavietojami definēta un to izmanto vairāk kā viena shēma. Nav"
+" iespējams jēgpilni strādāt ar tās vērtību."
+
+#: editor/registry-info.ui:106
+#| msgid ""
+#| "No schema available. Dconf Editor can’t find a schema associated with "
+#| "this key. The application that installed this key may have been removed, "
+#| "may have stop the use of this key, or may use a relocatable schema for "
+#| "defining its keys."
+msgid ""
+"No schema available. A schema is what describes the use of a key, and Dconf "
+"Editor can’t find one associated with this key. If the application that was "
+"using this key has been uninstalled, or if this key is obsolete, you may "
+"want to erase it."
+msgstr ""
+"Nav pieejamu shēmu. Shēma apraksta atslēgas pielietojumu un Dconf redaktors"
+" nevar atrast to shēmu, kas būtu saistīta ar šo atslēgu. Ka lietotne, kas"
+" izmanto šo atslēgu, ir atinstalēta, vai, ja šī atslēga ir novecojusi, jūs"
+" varētu vēlēties to izdzēst."
+
+#: editor/registry-info.ui:149
 msgid ""
 "This enumeration offers only one choice. That’s probably an error of the "
 "application that installed this schema. If possible, please open a bug about "
 "it."
 msgstr ""
-"Šis uzskaitījums dod tikai vienu iespēju. Tā, visdrīzāk, ir kļūda lietotnei,"
-" kas instalēja šo shēmu. Ja iespējams, ziņojiet viņiem par šo kļūdu."
+"Šis uzskaitījums dod tikai vienu iespēju. Tā, visdrīzāk, ir kļūda lietotnei, "
+"kas instalēja šo shēmu. Ja iespējams, ziņojiet viņiem par šo kļūdu."
 
-#: ../editor/registry-info.vala:80
+#: editor/registry-info.ui:159
+msgid ""
+"This integer key can only take one value. That’s probably an error of the "
+"application that installed this schema. If possible, please open a bug about "
+"it."
+msgstr ""
+"Šī veselā skaitļa atslēga var pieņemt tikai vienu vērtību. Tā, visdrīzāk, ir "
+"kļūda lietotnei, kas instalēja šo shēmu. Ja iespējams, ziņojiet viņiem par "
+"šo kļūdu."
+
+#: editor/registry-info.vala:114
+msgid "Defined by"
+msgstr "Noteica"
+
+#: editor/registry-info.vala:116
 msgid "Schema"
 msgstr "Shēma"
 
-#: ../editor/registry-info.vala:81
+#: editor/registry-info.vala:121
 msgid "Summary"
 msgstr "Kopsavilkums"
 
-#: ../editor/registry-info.vala:82
+#: editor/registry-info.vala:126
 msgid "Description"
 msgstr "Apraksts"
 
+#: editor/registry-info.vala:126
+#| msgid "No summary provided"
+msgid "No description provided"
+msgstr "Nav dots apraksts"
+
 #. Translators: as in datatype (integer, boolean, string, etc.)
-#: ../editor/registry-info.vala:84
+#: editor/registry-info.vala:129
 msgid "Type"
 msgstr "Tips"
 
-#: ../editor/registry-info.vala:86
+#: editor/registry-info.vala:131
 msgid "Minimum"
 msgstr "Minimums"
 
-#: ../editor/registry-info.vala:87
+#: editor/registry-info.vala:132
 msgid "Maximum"
 msgstr "Maksimums"
 
-#: ../editor/registry-info.vala:88
+#: editor/registry-info.vala:133
 msgid "Default"
 msgstr "Noklusējuma"
 
-#: ../editor/registry-info.vala:109
-#| msgid "Custom value"
+#: editor/registry-info.vala:141
+msgid ""
+"There are conflicting definitions of this key, getting value would be either "
+"problematic or meaningless."
+msgstr ""
+"Šai atslēgai ir konfliktējošas definīcijas, vērtības iegūšana varētu būt vai"
+" nu problemātiska, vai arī bezjēdzīga."
+
+#: editor/registry-info.vala:161
 msgid "Current value"
 msgstr "Pašreizējā vērtība"
 
-#: ../editor/registry-info.vala:134
+#: editor/registry-info.vala:197
 msgid "Use default value"
 msgstr "Izmantojiet noklusējuma vērtību"
 
-#: ../editor/registry-info.vala:192
+#: editor/registry-info.vala:255
 msgid "Custom value"
 msgstr "Pielāgotā vērtība"
 
+#. TODO if type contains "d"; on Intl.get_language_names ()[0] != "C"?
+#: editor/registry-info.vala:408
+msgid ""
+"Use a dot as decimal mark and no thousands separator. You can use the X.Ye+Z "
+"notation."
+msgstr ""
+"Izmantojiet punktu kā decimālo atdalītāju un neizmantojiet tūkstošu"
+" atdalītāju. Varat izmantot X.Ye+Z notāciju."
+
 #. Translators: neither the "nothing" keyword nor the "m" type should be translated; a "maybe type" is a type of variant that is nullable.
-#: ../editor/registry-info.vala:276
+#: editor/registry-info.vala:414
 msgid ""
 "Use the keyword “nothing” to set a maybe type (beginning with “m”) to its "
 "empty value. Strings, signatures and object paths should be surrounded by "
@@ -986,13 +1425,13 @@ msgstr ""
 "Izmantojiet atslēgvārdu “nekas”, lai iestatītu tipu “varbūt” (sākas ar ”m“) "
 "uz tukšu vērtību. Virknēm, parakstiem un objektu ceļiem ir jābūt pēdiņās."
 
-#: ../editor/registry-info.vala:278
+#: editor/registry-info.vala:416
 msgid ""
 "Strings, signatures and object paths should be surrounded by quotation marks."
 msgstr "Virknēm, parakstiem un objektu ceļiem ir jābūt pēdiņās."
 
 #. Translators: neither the "nothing" keyword nor the "m" type should be translated; a "maybe type" is a type of variant that is nullable.
-#: ../editor/registry-info.vala:282
+#: editor/registry-info.vala:420
 msgid ""
 "Use the keyword “nothing” to set a maybe type (beginning with “m”) to its "
 "empty value."
@@ -1000,24 +1439,129 @@ msgstr ""
 "Izmantojiet atslēgvārdu “nekas”, lai iestatītu tipu “varbūt” (sākas ar ”m“) "
 "uz tukšu vērtību."
 
-#: ../editor/registry-view.ui.h:1
+#: editor/registry-search.vala:30
+msgid "No matches"
+msgstr "Nekas neatbilst"
+
+#: editor/registry-search.vala:443
+#| msgid "Current value"
+msgid "Current folder"
+msgstr "Pašreizējā mape"
+
+#: editor/registry-search.vala:447
+msgid "Folders"
+msgstr "Mapes"
+
+#: editor/registry-search.vala:449
+msgid "Keys"
+msgstr "Atslēgas"
+
+#: editor/registry-view.vala:184
 msgid "No keys in this path"
 msgstr "Šajā ceļā atslēgu nav"
 
-#: ../editor/registry-view.vala:169
-#, c-format
-msgid "Cannot find folder \"%s\"."
-msgstr "Nevar atrast mapi “%s”."
+#: editor/registry-view.vala:251
+msgid "Keys not defined by a schema"
+msgstr "Atslēgas nav definētas shēmā"
 
-#: ../editor/registry-view.vala:187
-#, c-format
-msgid "Cannot find key \"%s\" here."
-msgstr "Nevar šeit atrast atslēgu “%s”."
+#: editor/setting-object.vala:65
+msgid "Boolean"
+msgstr "Būla"
 
-#: ../editor/registry-view.vala:193
-#, c-format
-msgid "Key \"%s\" has been removed."
-msgstr "Atslēga “%s” ir izņemta."
+#: editor/setting-object.vala:67
+msgid "String"
+msgstr "Virkne"
+
+#: editor/setting-object.vala:69
+msgid "String array"
+msgstr "Virkņu masīvs"
+
+#: editor/setting-object.vala:71
+msgid "Enumeration"
+msgstr "Uzskaitījums"
+
+#: editor/setting-object.vala:73
+msgid "Flags"
+msgstr "Karogi"
+
+#: editor/setting-object.vala:75
+msgid "Double"
+msgstr "Dubults"
+
+#. Translators: this handle type is an index; you may maintain the word "handle"
+#: editor/setting-object.vala:78
+msgid "D-Bus handle type"
+msgstr "D-Bus tura tips"
+
+#: editor/setting-object.vala:80
+msgid "D-Bus object path"
+msgstr "D-Bus objektu ceļš"
+
+#: editor/setting-object.vala:82
+msgid "D-Bus object path array"
+msgstr "D-Bus objektu ceļa masīvs"
+
+#: editor/setting-object.vala:84
+msgid "D-Bus signature"
+msgstr "D-Bus paraksts"
+
+#: editor/setting-object.vala:92
+msgid "Integer"
+msgstr "Vesels skaitlis"
+
+#: editor/setting-object.vala:210
+msgid "True"
+msgstr "Patiess"
+
+#: editor/setting-object.vala:212
+msgid "False"
+msgstr "Aplams"
+
+#: editor/setting-object.vala:213
+msgid "Nothing"
+msgstr "Nekas"
+
+#: editor/setting-object.vala:218
+msgid "true"
+msgstr "patiess"
+
+#: editor/setting-object.vala:220
+msgid "false"
+msgstr "aplams"
+
+#. Translators: "nothing" here is a keyword that should appear for consistence; please translate as "yourtranslation (nothing)"
+#: editor/setting-object.vala:222
+msgid "nothing"
+msgstr "nekas"
+
+#: editor/setting-object.vala:268
+msgid "DConf backend"
+msgstr "DConf aizmugure"
+
+#: editor/setting-object.vala:341
+msgid "Relocatable schema"
+msgstr "Pārvietojama shēma"
+
+#: editor/setting-object.vala:341
+msgid "Schema with path"
+msgstr "Shēma ar ceļu"
+
+#~| msgid "The width of the main window in pixels."
+#~ msgid "The theme of the navigation list"
+#~ msgstr "Navigācijas saraksta motīvs"
+
+#~ msgid ""
+#~ "The themes are defined by the application, you cannot add one. The theme "
+#~ "'three-twenty-two' will remain as close as possible to the default theme "
+#~ "of the 3.22 release."
+#~ msgstr ""
+#~ "Motīvus nosaka lietotne, jūs tos nevarat mainīt. Motīvs “three-twenty-"
+#~ "two” paliks pēc iespējas tuvāks noklusējuma 3.22 laidienam."
+
+#~| msgid "Current view actions"
+#~ msgctxt "shortcut window"
+#~ msgid "Current row menu"
+#~ msgstr "Pašreizējā rindu izvēlne"
 
 #~ msgid "Double [%s..%s]"
 #~ msgstr "Dubults [%s..%s]"

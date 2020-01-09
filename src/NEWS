@@ -1,3 +1,226 @@
+dconf-editor 3.28.0
+=====================
+
+All looks good for a new stable release. Many changes in the UI, many changes in
+the backend, some real improvements that –I hope– will please every user of this
+3.28 release. Needs to be highlighted, the rework of the list of keys look, some
+fixes in the backend with notably the support of relocatable schemas (a function
+that was asked regularly) and a refresh of the schema list, and a first revision
+of an improved search function.
+
+Translations updated:
+  Croatian: gogo
+  Danish: Ask Hjorth Larsen
+  British English: Bruce Cowan
+  French: Alain Lojewski
+  German: Tim Sabsch
+  Italian: Milo Casagrande
+  Latvian: Rūdolfs Mazurs
+  Serbian and Serbian Latin: Марко Костић and Милош Поповић
+  Swedish: Anders Jonsson
+  Turkish: Muhammet Kara
+
+dconf-editor 3.27.92
+=====================
+
+Small fixes of corner cases, it looks good for a clean release. I’m just annoyed
+by the impossibility of opening a path from command-line when in a Flatpack, but
+I don’t consider this packaging format as supported for now, so fixes will come.
+
+Translations updated:
+  all: Arnaud Bonatti
+  Catalan: Jordi Mas
+  Czech: Marek Černocký
+  Danish: Ask Hjorth Larsen
+  Dutch: Nathan Follens
+  Finnish: Jiri Grönroos
+  Friulian: Fabio Tomat
+  Galician: Fran Dieguez
+  German: Tim Sabsch
+  Hungarian: Balázs Úr
+  Indonesian: Kukuh Syafaat
+  Kazakh: Baurzhan Muftakhidinov
+  Korean: Changwoo Ryu
+  Lithuanian: Aurimas Černius
+  Occitan: Cédric Valmary
+  Polish: Piotr Drąg
+  Brazilian Portuguese: Rafael Fontenelle
+  Serbian: Марко Костић
+  Serbian Latin: Милош Поповић
+  Turkish: Emin Tufan Çetin
+
+dconf-editor 3.27.91
+=====================
+
+Random schedule is random, that’s a beta release. :) I didn’t publish 3.27.4, as
+it would have needed a Gtk+ 3.22.27 release and as there was so many big changes
+planned in the code that releasing a snapshot would have been quite meaningless.
+So have a look also to the 3.27.4 news!
+
+As planned, the code changed a lot this last month, and that will help in future
+developments; but that is not visible to the user of course. There has been many
+attention given to details, like hiding boolean switches from keys list when the
+delay mode is activated, ensuring all ellipsize correctly, selecting the current
+row when entering search mode, etc. Schemas containing neither keys nor children
+are not displayed anymore but emit a warning at application startup instead. The
+transitions also look smooth using HighContrast theme.
+
+The big thing is probably the handling of multiple schemas installed at the same
+path, and the new keys list organisation by schema. The first looks certainly as
+a corner-case, but not handling that was a sad proof of the fragility of the way
+the application was displaying keys, and I’m happy it’s now fixed. The second is
+possibly something that will help a bit users to understand the structure of the
+settings internals, and that’s always a good thing. Sorting folders first option
+has been of course removed, as that’s the default now.
+
+Hope we’re good now for an incredible 3.28 release in March! :)
+
+Translations updated:
+  Finnish: Jiri Grönroos
+  Friulian: Fabio Tomat
+  Galician: Fran Dieguez
+  Hungarian: Balázs Meskó and Balázs Úr
+  Indonesian: Kukuh Syafaat and Andika Triwidada
+  Lithuanian: Aurimas Černius
+  Polish: Piotr Drąg
+  Brazilian Portuguese: Rafael Fontenelle
+  Spanish: Daniel Mustieles
+
+dconf-editor 3.27.4
+=====================
+
+Various UI improvements, including icons next to edited keys, and the limitation
+of the content in infobar. The underlying model has also been improved a little.
+The experimental code that was causing crashes in some build conditions has been
+removed. Also, the actions that were accessible via dbus have been made private.
+The command-line has been a little bit reworked, with an experimental completion
+available, and the manpage updated.
+
+Translations updated:
+  Czech: Marek Černocký
+  Friulian: Fabio Tomat
+  German: Tim Sabsch
+  Indonesian: Kukuh Syafaat
+  Italian: Gianvito Cavasoli
+  Spanish: Daniel Mustieles
+
+dconf-editor 3.27.3
+=====================
+
+Big release. There’s a new developer, Davi da Silva Böger, and things are moving
+faster, finally. Great. :)
+
+The main UI has been redesigned. The search is now dynamic and looks great; even
+if search results could be improved, this function will probably already be more
+useful than what was there previously. Relocatable schemas are now handled; that
+has been possible by adding an internal list of known mappings, and offering the
+user a settings to add custom ones. Please, test.
+
+Some little more things for users: the “back” and “forward” buttons of mice that
+have some could now be used; you can now open dconf-editor to a given path or to
+the path where a given schema is mapped using command-line; there’s an option to
+sort folder first (or last); HighContrast theme has been tested with new design;
+edition of values of type “double” is fixed; keys of the “string array” type are
+not anymore edited with a single-line entry; etc.
+
+As you can imagine, many things have changed internally. This release includes a
+(recently pushed) patch known to break the handling of some corner-cases; if you
+hit one of these, please report bug, it will help. And other changes are coming.
+
+Packagers should be aware also that the gettext domain changed, and that there’s
+a patch included that has been reported to make the build in some quite specific
+conditions crashy; if you are in this situation, please comment on the bugzilla.
+
+Translations updated:
+  Czech: Marek Cernocky
+  French: Charles Monzat
+  Friulian: Fabio Tomat
+  German: Mario Blättermann
+  Indonesian: Kukuh Syafaat
+  Nepali: Pawan Chitrakar
+  Norwegian bokmål: Kjartan Maraas
+  Spanish: Daniel Mustieles
+  Turkish: Muhammet Kara
+
+dconf-editor 3.27.1
+=====================
+
+The main change in this (unstable) release is the switch from Autotools to Meson
+for a faster build. Thanks for testing and reporting every bug that’s related to
+this important change (or to any other thing :) of course). And you can now open
+dconf-editor to a path given on the commandline.
+
+Translations updated:
+  Catalan (Valencian): Xavi Ivars
+  Friulian: Fabio Tomat
+  Indonesian: Kukuh Syafaat
+  Italian: Milo Casagrande
+  Lithuanian: Aurimas Černius
+  Brazilian Portuguese: Fábio Nogueira
+
+dconf-editor 3.26.1
+=====================
+
+Long time since last release, with some little but interesting changes, and many
+translations updates. First, there is now a toggle on boolean rows for switching
+faster the key value. In the same spirit, integer keys that only accepts a small
+range of values now can be directly changed, from the right-click popover. There
+is also a shortcut for reseting a key to its default value.
+
+Translations updated:
+  Basque: Inaki Larranaga Murgoitio
+  Catalan: Jordi Mas
+  Chinese (China): Mandy Wang
+  Chinese (Taiwan): Chao-Hsiung Liao
+  Czech: Marek Černocký
+  Danish: Ask Hjorth Larsen
+  Dutch: hanniedu
+  Esperanto: Kristjan Schmidt
+  Finnish: Jiri Grönroos
+  French: Claude Paroz
+  Friulian: Fabio Tomat
+  Galician: Fran Dieguez
+  German: Mario Blättermann
+  Hungarian: Balázs Meskó and Gábor Kelemen
+  Indonesian: Andika Triwidada
+  Italian: Milo Casagrande
+  Kazakh: Baurzhan Muftakhidinov
+  Korean: Changwoo Ryu
+  Latvian: Rūdolfs Mazurs
+  Lithuanian: Aurimas Černius
+  Malayalam: Anish Sheela and Nidarsh Raj
+  Nepali: Pawan Chitrakar (new)
+  Norwegian bokmål: Kjartan Maraas
+  Occitan: Cédric Valmary
+  Polish: Piotr Drąg
+  Brazilian Portuguese: Rafael Fontenelle
+  Portuguese: Robert Roth
+  Serbian: Мирослав Николић
+  Slovak: Dušan Kazik
+  Slovenian: Matej Urbančič
+  Spanish: Daniel Mustieles
+  Swedish: Anders Jonsson
+  Turkish: Osman Karagöz
+
+dconf-editor 3.23.4
+=====================
+
+The bigger change is the switch to modern Gettext for translations of XML files,
+in place of the deprecated Intltool. That came with a cleaning of Autotools code
+–let’s hope I didn't break things here or there. Also, Unicode is now used where
+needed in every translatable english string. There're some small changes in keys
+description presentation, but more to come on the topic in this cycle.
+
+Translations (which content has been) updated:
+  Czech: Marek Černocký
+  Friulian: Fabio Tomat
+  Hungarian: Gábor Kelemen
+  Kazakh: Baurzhan Muftakhidinov
+  Norwegian bokmål: Kjartan Maraas
+  Polish: Piotr Drąg
+  Brazilian Portuguese: Rafael Fontenelle
+  Spanish: Daniel Mustieles
+
 dconf-editor 3.22.3
 =====================
 
